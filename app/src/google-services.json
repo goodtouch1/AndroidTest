@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "920983690560",
+    "firebase_url": "https://inspiring-chess-315822-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "inspiring-chess-315822",
+    "storage_bucket": "inspiring-chess-315822.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920983690560:android:9a49a4a0537a944cec6ea5",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920983690560-mvvq0l3jofa2rampvpquqi6p036el8as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuvunU30vg5osPrXxBVMsyFaEu4dXIGlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920983690560-mvvq0l3jofa2rampvpquqi6p036el8as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
