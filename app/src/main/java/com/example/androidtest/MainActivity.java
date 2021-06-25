@@ -15,7 +15,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
-
+    String durum;
 
     final DatabaseReference ledstatus1 = myRef.child("kirmizi").child("status");
 
@@ -31,14 +31,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        textView1 = (TextView)findViewById(R.id.text);
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapshot : dataSnapshot.getValue(true)){
-                        if (snapshot==true){
-
-                        }
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()){
+                        String durum = (String) snapshot.child(String.valueOf(ledstatus1)).getValue(); //Gelen Veriyi okuma
                 }
+                if ("Yanıyor" == durum) {
+
+                }
+
+
             }
 
             @Override

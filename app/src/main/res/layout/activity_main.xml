@@ -8,12 +8,25 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Sayi"
-        android:id="@+id/edit"
-        android:layout_marginBottom="10dp"/>
+    <TextView
+
+        android:id="@+id/textView1"
+        android:layout_width="450dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="180dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="SISTEMACIK"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 
