@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                         String durum = (String) snapshot.child(String.valueOf(ledstatus1)).getValue(); //Gelen Veriyi okuma
                 }
                 if ("on" == durum) {
-
+                    sesliuyari.start();
                 }
 
 
