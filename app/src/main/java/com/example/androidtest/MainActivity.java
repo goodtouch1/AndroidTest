@@ -12,7 +12,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
+
 public class MainActivity extends AppCompatActivity {
+
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
     String durum;
@@ -25,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     TextView textView1;
-    TextView textView2;
-    TextView textView3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                         String durum = (String) snapshot.child(String.valueOf(ledstatus1)).getValue(); //Gelen Veriyi okuma
                 }
-                if ("Yanıyor" == durum) {
+                if ("on" == durum) {
 
                 }
 
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onCancelled(@NonNull @org.jetbrains.annotations.NotNull DatabaseError error) {
+            public void onCancelled(@NonNull  DatabaseError error) {
 
             }
         });
