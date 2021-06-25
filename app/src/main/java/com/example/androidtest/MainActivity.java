@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if ("on" == durum) {
                     sesliuyari.start();
+                }else{
+                    sesliuyari.stop();
                 }
 
 
